@@ -219,7 +219,8 @@ set Party_Alliance = 'Other'
 where party_Alliance is null;
 
 
-
+## SQL-Election_Results_2024_Project
+🛠️ Technologies Used: SQL Server, T-SQL, Data Cleaning, Exploratory Data Analysis
 
 
 --8.We just use group by to specify which alliance won the most seats
@@ -332,4 +333,5 @@ JOIN statewise_results sr ON cr.Parliament_Constituency = sr.Parliament_Constitu
 JOIN states s ON sr.State_ID = s.State_ID
 JOIN partywise_results p ON cr.Party_ID = p.Party_ID
 WHERE s.State = 'Maharashtra';
+
 
